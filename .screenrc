@@ -1,0 +1,26 @@
+
+# 关闭欢迎消息
+startup_message off
+
+# 消除残余的编辑文本
+altscreen on
+
+# 定义screen功能键为Ctrl + T
+escape ^Tt
+
+# 设置屏幕缓冲区1024行
+defscrollback 1024
+
+# 关闭错误提示
+vbell off
+term screen-256color
+
+# 显示信息状态栏
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
+
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10
+screen 1
